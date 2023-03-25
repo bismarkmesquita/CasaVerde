@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
+
+
+:root {
+  /* cores */
+  --preto: #202020;
+  --branco: #FFFFFF;
+  --amarelo: #FFCB47;
+
+  /* fontes */
+  --fonte-principal: "Elsie Swash Caps";
+  --fonte-secundaria: "Montserrat";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--branco);
+  font-family: var(--fonte-secundaria);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--preto);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+body::-webkit-scrollbar {
+  background-color: var(--preto);
+  width: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body::-webkit-scrollbar-thumb {
+  background-color: var(--botao);
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  margin: 0 5vw;
 }
